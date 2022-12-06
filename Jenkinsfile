@@ -13,9 +13,10 @@ pipeline {
         }
         stage("Build"){
             steps {
-                dir("simple-java-maven-app"){
-                    sh "mvn clean install -DskipTests"
-                }
+                sh """
+                cd simple-java-maven-app
+                mvn clean install --DskipTests
+                """
             }
         }
 //         stage("Test") {
