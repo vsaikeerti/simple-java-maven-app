@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Clone repo"){
             steps {
-                checkout scm
+                sh "git clone https://github.com/vsaikeerti/simple-java-maven-app.git"
             }
         }
         stage("Build"){
