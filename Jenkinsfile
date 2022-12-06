@@ -11,7 +11,7 @@ pipeline {
                 git branch: 'dev', url: 'https://github.com/vsaikeerti/simple-java-maven-app.git'
             }
         }
-        stage("Build"){
+        stage("Build the code"){
             steps {
                 sh """
                 cd simple-java-maven-app
@@ -27,7 +27,7 @@ pipeline {
 //             }
 //         }
         
-        stage(" Runngin the code"){
+        stage(" Runngin the codeeee"){
             steps{
                 sh """
                 cd simple-java-maven-app/target
