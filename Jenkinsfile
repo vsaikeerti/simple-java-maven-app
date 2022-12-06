@@ -11,7 +11,7 @@ pipeline {
                 sh "git clone https://github.com/vsaikeerti/simple-java-maven-app.git"
             }
         }
-        stage("Build"){
+        stage("Build the code"){
             steps {
                 dir("simple-java-maven-app"){
                     sh "mvn clean install -DskipTests"
