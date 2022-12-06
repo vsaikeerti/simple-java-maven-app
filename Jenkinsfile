@@ -21,7 +21,7 @@ pipeline {
         stage("Test") {
             steps {
                 dir("simple-java-maven-app"){
-                    sh "mvn test"
+                    sh "mvn test -DtestFailureIgnore=true"
                 }
             }
         }
