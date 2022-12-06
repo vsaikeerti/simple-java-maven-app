@@ -6,7 +6,8 @@ package com.mycompany.app;
 public class App
 {
 
-    private final String message = "Hello World! this is from COMAKEIT, this si an new line added ";
+    private final String message = " helle worked Hello World! this is from COMAKEIT";
+
 
     public App() {}
 
