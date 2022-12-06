@@ -18,13 +18,13 @@ pipeline {
                 }
             }
         }
-        stage("Test") {
-            steps {
-                dir("simple-java-maven-app"){
-                    sh "mvn test -DtestFailureIgnore=true"
-                }
-            }
-        }
+//         stage("Test") {
+//             steps {
+//                 dir("simple-java-maven-app"){
+//                     sh "mvn test -DtestFailureIgnore=true"
+//                 }
+//             }
+//         }
         
         stage(" Runngin the code"){
             steps{
