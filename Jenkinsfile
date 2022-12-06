@@ -27,7 +27,7 @@ pipeline {
 //             }
 //         }
         
-        stage(" Runngin the code"){
+        stage(" Runngin the codeeee"){
             steps{
                 sh """
                 cd simple-java-maven-app/target
